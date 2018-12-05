@@ -105,6 +105,10 @@ html {
 }
 body {
     background-color: #f2f2f2; 
+    font-family: 'Open Sans', sans-serif;
+}
+h2 {
+    font-family: 'Oswald', sans-serif;
 }
 /* Header */
 .hero {
@@ -151,6 +155,8 @@ body {
 }
 .informacion-evento p i {
     color: #fe4918;
+    font-size: 1.6rem;
+    margin-right: 10px;
 }
 .fecha {
     float: left;
@@ -158,6 +164,25 @@ body {
 .ciudad {
     float: right;
     text-align: right;
+}
+.nombre-sitio {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 5.9vw;
+    text-transform: uppercase;
+}
+@media only screen and (min-width:768px){
+    .nombre-sitio {
+        font-size: 11.5vw;
+        line-height: 1
+    }
+}
+.slogan {
+   color: #ffffff;
+   margin-top: 0;
+   text-align: center;
+}
+.slogan span {
+    font-weight: bold;
 }
 
 
