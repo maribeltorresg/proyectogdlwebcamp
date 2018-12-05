@@ -97,6 +97,68 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html {
+    box-sizing: border-box;
+}
+*,*::before,*::after {
+    box-sizing: inherit;
+}
+body {
+    background-color: #f2f2f2; 
+}
+/* Header */
+.hero {
+    background-image: url(../img/encabezado.jpg);
+    background-position: top center; 
+    background-size: cover;
+    height: 100vh;
+}
+.contenido-header {
+    padding-top: 40px;
+}
+@media only screen and (min-width:768px){
+    .contenido-header {
+        padding-top: 10px;
+    }
+}
+.redes-sociales {
+    text-align: center;
+}
+.redes-sociales a {
+    color: #ffffff;
+    font-size: 1.6em;
+    margin-right: 20px;
+}
+.redes-sociales a:last-child {
+    margin-right: 0;
+}
+.informacion-evento {
+    color: #ffffff;
+    text-align: center;
+}
+@media only screen and (min-width:768px){
+    .informacion-evento {
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 70%;
+    }
+}
+.informacion-evento p {
+    display: inline;
+    font-size: 20px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.informacion-evento p i {
+    color: #fe4918;
+}
+.fecha {
+    float: left;
+}
+.ciudad {
+    float: right;
+    text-align: right;
+}
 
 
 
