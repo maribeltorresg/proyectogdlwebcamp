@@ -211,6 +211,7 @@ h2 {
     padding: 20px 0;
 }
 .logo {
+    float: left;
     width: 80%;
 }
 .logo img {
@@ -219,21 +220,22 @@ h2 {
 
 @media only screen and (min-width:768px) {
     .logo {
-        float: left;
         width: 33%;
     }
 }
 /* Nav principal */
-.navegacion-principal {
-    display: none;
-}
+
 .navegacion-principal a {
     color: #ffffff;
     font-family: 'Oswald', sans-serif;
     font-size: 1.1em;
+    display: block;
+    margin-bottom: 20px;
     text-transform: uppercase;
+    text-align: center;
     text-decoration: none;
     transition: all .6s ease;
+    width: 100%;
 }
 .navegacion-principal a:hover {
     background-color: #fe4918; 
@@ -254,9 +256,33 @@ h2 {
     }
     .navegacion-principal a {
         display: inline-block;
-        margin-right: 10px;
+        margin-right: 0 10px 0 0;
         padding: 10px;
+        text-align: center;
+        width: auto;
     }
+}
+/* Menu Movil */
+.menu-movil {
+    display: block;
+    float: right;
+    margin-top: 12px;
+    text-align: right;
+    width: 60px;
+}
+.menu-movil:hover {
+    cursor: pointer;
+}
+@media only screen and (min-width:768px) {
+    .menu-movil {
+        display: none;
+    }
+}
+.menu-movil span {
+    background-color: #ffffff;
+    display: block;
+    height: 8px;
+    margin-bottom: 6px;
 }
 
 
