@@ -503,9 +503,50 @@ ul.resumen-evento li {
 .numero {
     color: #fe4918;
     display: block;
+    font-family: 'Oswald', sans-serif;
     font-size: 3.5em;
     margin: 0 0 10px 0;
 }
+
+/* Tabla de Precios */
+.lista-precios {
+    margin: auto;
+    width: 75%;
+    display: block;
+}
+.lista-precios > li {
+    padding: 10px;
+}
+@media only screen and (min-width:768px) {
+    .lista-precios > li {
+        float: left;
+        width: 33.3%;
+    }
+}
+.tabla-precio {
+    border: 1px solid #e1e1e1;
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+.tabla-precio ul li {
+    color: #868686;
+    line-height: 26px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.tabla-precio h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.tabla-precio .numero {
+    color: #000;
+    margin: 15px 0; 
+}
+
 
 
 
