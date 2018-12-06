@@ -427,7 +427,15 @@ ul {
     position: relative;
 }
 .invitado img {
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .5s ease-in-out;
     max-width: 100%;
+}
+.invitado:hover img {
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.1);  
+    /* transform: rotate(3deg); */
 }
 .invitado p {
     background-color: rgba(0, 0, 0, 0.55); 
@@ -441,9 +449,13 @@ ul {
     left: 0;
     text-align: left;
     /* text-transform: uppercase; */
+    -webkit-transition: all .5s ease-in-out;
     width: 100%;
 }
-
+.invitado:hover p {
+    bottom: -80px;
+    opacity: 0;
+}
 
 
 
