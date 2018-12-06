@@ -155,6 +155,11 @@ h3 {
     font-family: 'PT Sans', sans-serif;
     margin: 0;
 }
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 .button {
     background-color: #fe4918;
     color: #ffffff;
@@ -386,7 +391,8 @@ h3 {
     color: #fe4918;
     font-size: 1.2em;
     margin-right: 10px;
-}
+} 
+
 /* Detalle evento */
 .detalle-evento {
     border-bottom: 1px solid #000;
@@ -400,6 +406,44 @@ h3 {
     font-size: 18px;
     margin-bottom: 20px;
 }
+
+/* Nuestros Invitados */
+.lista-invitados li {
+    float: left;
+    padding: 10px;
+}
+@media only screen and (min-width:480px) {
+    .lista-invitados li {
+        width: 50%;
+    }
+}
+@media only screen and (min-width:768px) {
+    .lista-invitados li {
+        width: 33.3%;
+    }
+}
+.invitado {
+    overflow: hidden;
+    position: relative;
+}
+.invitado img {
+    max-width: 100%;
+}
+.invitado p {
+    background-color: rgba(0, 0, 0, 0.55); 
+    color: #fe4918;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 15px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    /* text-transform: uppercase; */
+    width: 100%;
+}
+
 
 
 
