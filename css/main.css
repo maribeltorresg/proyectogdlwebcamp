@@ -149,6 +149,30 @@ h2::after {
     margin: 0 auto;
     width: 100px;
 }
+h3 {
+    color: #fe4918;
+    font-size: 1.4em;
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+}
+.button {
+    background-color: #fe4918;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 20px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+.button:hover {
+    background-color: #e33000;
+}
+.float-right {
+    float: right;
+}
 /* Header */
 .hero {
     background-image: url(../img/encabezado.jpg);
@@ -303,6 +327,79 @@ h2::after {
     margin-bottom: 6px;
 }
 
+/* Talleres */
+.programa {
+    position: relative;
+}
+.contenedor-video {
+    max-width: 100%;
+    overflow: hidden;
+}
+.contenido-programa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.programa-evento {
+    background-color: rgba(255, 255, 255, .8);
+    margin-top: 80px;
+    padding: 15px;
+}
+@media only screen and (min-width:768px) {
+    .programa-evento {
+        width: 70%;
+    }
+}
+@media only screen and (min-width:992px) {
+    .programa-evento {
+        width: 50%;
+    }
+}
+.menu-programa {
+    border-bottom: 1px solid #fe4918;
+    padding-bottom: 10px; 
+    width: 100%;
+}
+@media only screen and (min-width:768px) {
+    .menu-programa {
+        display: table;
+    }
+}
+.menu-programa a {
+    color: #000;
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 10px; 
+    text-decoration: none;
+    text-align: center;
+}
+@media only screen and (min-width:768px) {
+    .menu-programa a {
+        display: table-cell;
+    }
+}
+.menu-programa a i ,
+.detalle-evento i {
+    color: #fe4918;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+/* Detalle evento */
+.detalle-evento {
+    border-bottom: 1px solid #000;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+.detalle-evento:nth-child(2) {
+    border: none;
+}
+.detalle-evento p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
 
 
 
