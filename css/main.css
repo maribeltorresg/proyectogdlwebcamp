@@ -163,6 +163,7 @@ ul {
 }
 .button {
     background-color: #fe4918;
+    border: 2px solid #fe4918;
     color: #ffffff;
     display: inline-block;
     font-weight: bold;
@@ -172,6 +173,11 @@ ul {
     text-transform: uppercase;
     text-decoration: none;
     transition: all .3s ease;
+}
+.button.hollow, 
+.button.hollow:hover {
+    background-color: #ffffff;
+    color: #fe4918;
 }
 .button:hover {
     background-color: #e33000;
@@ -529,6 +535,12 @@ ul.resumen-evento li {
     padding: 40px 0;
     text-align: center;
 }
+.tabla-precio:hover {
+    border: 1px solid #fe4918;
+    box-shadow: 0px 0px 50px #666;
+    transform: scale(1);
+    transition:  all .3s ease;
+}
 .tabla-precio ul li {
     color: #868686;
     line-height: 26px;
@@ -537,6 +549,27 @@ ul.resumen-evento li {
     margin-bottom: 20px;
     text-transform: uppercase;
 }
+/* .tabla-precio ul li::before {
+    color: green;
+    content: '\f00c';
+    display: inline-block;
+    font-family: 'font awesome 5 free';
+    font-size: 20px;
+    padding: 0 5px;
+    vertical-align: top;
+    -webkit-font-smoothing: antialiased; 
+} */
+div.tabla-precio ul li:before {
+    font-family: 'font awesome 5 free';
+    font-weight: 900;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 5px;
+    font-size: 16px;
+    color: green;
+    -webkit-font-smoothing: antialiased;
+    content: '\f00c';
+  }
 .tabla-precio h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
