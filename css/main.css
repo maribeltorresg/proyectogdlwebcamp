@@ -347,6 +347,9 @@ ul {
     max-width: 100%;
     overflow: hidden;
 }
+/* .contenedor-video video {
+    width: 100%;
+} */
 .contenido-programa {
     position: absolute;
     top: 0;
@@ -578,6 +581,12 @@ div.tabla-precio ul li:before {
 .tabla-precio .numero {
     color: #000;
     margin: 15px 0; 
+}
+
+/* Mapa */
+.mapa {
+    background-color: pink; 
+    height: 420px;
 }
 
 
