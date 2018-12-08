@@ -589,7 +589,69 @@ div.tabla-precio ul li:before {
     height: 420px;
 }
 
-
+/* Testimoniales */
+.testimoniales {
+    padding-bottom: 20px; 
+}
+.testimonial {
+    padding: 5px;
+}
+@media only screen and (min-width:768px) {
+    .testimonial {
+        float: left;
+        width: 33.3%;
+    }
+}
+blockquote {
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    position: relative;
+    margin: 0 0 10px 0;
+    padding-bottom: 20px; 
+}
+blockquote .parraf-testimonial {
+    font-size: .8em;
+    font-family: 'PT Sans', sans-serif;
+    padding: 0 20px 0 55px;
+    text-align: justify;
+}
+blockquote .parraf-testimonial::before {
+    content: '\201c';
+    position: absolute;
+    left: 13px;
+    top: 6px;
+    font-size: 6rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #fe4918;
+}
+.info-testimonial {
+    padding: 0;
+}
+.info-testimonial img {
+    border-radius: 50%;
+    float: left;
+    margin-left: 20px;
+    width: 20%;
+}
+.info-testimonial cite {
+    color: #fe4918;
+    font-size: 12px;
+    float: right;
+    font-weight: bold;
+    font-style: normal;
+    padding-top: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    width: 66.6%;
+}
+.info-testimonial cite span {
+    color: #000;
+    display: block;
+    margin-top: 5px;
+    text-transform: none;
+}
 
 
 
