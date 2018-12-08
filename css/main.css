@@ -179,6 +179,13 @@ ul {
     background-color: #ffffff;
     color: #fe4918;
 }
+.button.tranparente {
+    background-color: transparent;
+    border-color: #ffffff;
+}
+.button.tranparente:hover {
+    border-color: #fe4918; 
+}
 .button:hover {
     background-color: #e33000;
 }
@@ -653,6 +660,30 @@ blockquote .parraf-testimonial::before {
     text-transform: none;
 }
 
+/* Newsletter */
+.newsletter {
+    height: auto;
+    position: relative;
+}
+.newsletter::before {
+    background-image: url(../img/bg-newsletter.jpg);
+    content: '';
+}
+.newsletter .contenido {
+    color: #ffffff;
+    padding: 100px 0;
+    position: relative;
+    text-align: center;
+}
+.newsletter .contenido p {
+    font-size: 1.2em;
+}
+.newsletter .contenido h3 {
+    color: #ffffff;
+    font-size: 6vw;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+}
 
 
 
