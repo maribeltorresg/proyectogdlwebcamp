@@ -132,7 +132,7 @@ body {
     padding: 30px 0;
 }
 .seccion p {
-    font-size: 1.1em;
+    /* font-size: 1.1em; */
     text-align: center;
 }
 h2 {
@@ -683,6 +683,25 @@ blockquote .parraf-testimonial::before {
     font-size: 6vw;
     font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
+}
+
+/* Cuenta regresiva */
+@media only screen and (max-width:767px) {
+    .cuenta-regresiva {  
+        text-align: center;
+    }
+}
+.cuenta-regresiva ul li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+@media only screen and (min-width:768px) {
+    .cuenta-regresiva ul li {
+        float: left;
+        width: 25%;
+    }
 }
 
 
