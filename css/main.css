@@ -686,6 +686,9 @@ blockquote .parraf-testimonial::before {
 }
 
 /* Cuenta regresiva */
+.cuenta-regresiva ul {
+    width: 100%;
+}
 @media only screen and (max-width:767px) {
     .cuenta-regresiva {  
         text-align: center;
@@ -704,7 +707,45 @@ blockquote .parraf-testimonial::before {
     }
 }
 
-
+/* footer */
+.site-footer {
+    background-color: #353535; 
+    padding: 40px 0 0 0; 
+}
+footer .contenedor > div {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 0 20px;
+    text-align: justify;
+}
+@media only screen and (min-width:768px) {
+    footer .contenedor > div {
+        float: left;
+        width: 33.3%;
+    }
+}
+footer h3 {
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+footer h3 span {
+    color: #fe4918;
+}
+.ultimos-tweets li {
+    margin-bottom: 10px;
+}
+.menu .redes-sociales {
+    text-align: left;
+}
+.copyright {
+    background-color: #2e2e2e;
+    color: #ffffff;
+    margin: 20px 0 0 0;
+    padding: 10px 0;
+    text-align: center;
+}
 
 
 
