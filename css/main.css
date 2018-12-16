@@ -747,8 +747,101 @@ footer h3 span {
     text-align: center;
 }
 
+/* INTERDNAS */
+/* Registro */
+form.registro h3 {
+    margin: 20px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+form.registro label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+h4 {
+    border-bottom: 2px solid #fe4918;
+    font-size: 1.1em;
+    padding: 0 0 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.caja {
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    margin: 10px;
+    padding: 10px; 
+}
+.campo {
+    padding: 20px;
+}
 
+@media only screen and (min-width:768px) {
+    .campo {
+        float: left;
+        width: 33.3%;
+    }
+}
+.paquetes .tabla-precio:hover {
+    box-shadow: none;
+    transform: none;
+}
+.paquetes .tabla-precio input {
+    clear: both;
+    display: block;
+    margin: 10px auto 0 auto;
+    width: 80px;
+}
+.contenido-dia {
+    /* display: none; */
+    padding: 2px;
+}
+@media only screen and (min-width:768px) {
+    .contenido-dia > div {
+        float: left;
+        width: 33.3%;
+    }
+}
+.contenido-dia > div p {
+    text-align: left;
+}
+.contenido-dia > div label {
+    display: block;
+    margin-bottom: 10px;
+}
+.contenido-dia > div input {
+    margin-right: 10px;
+}
+.contenido-dia > div label time {
+    color: #fe4918;
+    font-weight: bold;
+}
 
+/* Resumen Registro */
+.resumen p {
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+.resumen .extras {
+    float: left;
+    padding: 30px;
+    width: 50%;
+}
+.extras .orden {
+    margin-bottom: 10px;
+    text-align: left;
+}
+.extras .orden input {
+    margin: 10px 0 0 0;
+}
+.resumen .total {
+    float: right;
+    padding: 30px;
+    width: 50%;
+}
+.resumen input {
+    display: block;
+    margin: 10px auto;
+}
 
 
 
