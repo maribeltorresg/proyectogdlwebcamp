@@ -792,7 +792,7 @@ h4 {
     width: 80px;
 }
 .contenido-dia {
-    /* display: none; */
+    display: none;
     padding: 2px;
 }
 @media only screen and (min-width:768px) {
@@ -841,6 +841,24 @@ h4 {
 .resumen input {
     display: block;
     margin: 10px auto;
+}
+.lista-productos {
+    background-color: #e1e1e1;
+    display: none;
+    padding: 5px;
+}
+.suma-total {
+    color: #fe4918;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.error {
+    clear: both;
+    display: none;
+    font-size: 12px;
+    padding: 4px;
 }
 
 
