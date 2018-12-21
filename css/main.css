@@ -380,8 +380,6 @@ ul {
     }
 }
 .menu-programa {
-    border-bottom: 1px solid #fe4918;
-    padding-bottom: 10px; 
     width: 100%;
 }
 @media only screen and (min-width:768px) {
@@ -389,15 +387,35 @@ ul {
         display: table;
     }
 }
+
 .menu-programa a {
+    border-bottom: 1px solid #fe4918;
     color: #000;
     display: block;
     font-family: 'Oswald', sans-serif;
     font-size: 1.2em;
     margin-bottom: 10px; 
+    position: relative;
+    padding-bottom: 10px;
     text-decoration: none;
     text-align: center;
 }
+
+.menu-programa a.activo::after {
+    background-image: url('../img/talleres-flecha.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;  
+    bottom: -20px;
+    content: '';
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+}
+
 @media only screen and (min-width:768px) {
     .menu-programa a {
         display: table-cell;
@@ -416,12 +434,18 @@ ul {
     margin-top: 20px;
     padding: 0 20px;
 }
+
 .detalle-evento:nth-child(2) {
     border: none;
 }
+
 .detalle-evento p {
     font-size: 18px;
     margin-bottom: 20px;
+}
+
+.ocultar {
+    display: none;
 }
 
 /* Nuestros Invitados */

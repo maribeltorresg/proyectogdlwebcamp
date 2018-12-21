@@ -1,9 +1,14 @@
 (function() {
     "use strict";
     // DOM CONTENT LOADED
+    
     document.addEventListener('DOMContentLoaded', function() {
 
-        var map = L.map('mapa').setView([-12.156085, -76.990995], 16);
+        var mapa = document.getElementById('mapa');
+
+        if(mapa) {
+
+            var map = L.map('mapa').setView([-12.156085, -76.990995], 16);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -14,6 +19,8 @@
             .openPopup()
             .bindTooltip('Un Tooltip')
             .openTooltip();
+
+        }
         
         // console.log("listo");
         // Campos datos usuarios
@@ -145,3 +152,27 @@
 
     }); 
 })();
+
+// Usando jQuery
+
+$(document).ready(function() {
+    // $('.ocultar').hide();
+
+    // Programa de conferencias (talleres)
+    $('.programa-evento .info-curso:first').show();
+    $('.menu-programa a:first').addClass('activo');
+
+    $('.menu-programa a').on('click', function() {
+        $('.menu-programa a').removeClass('activo'); //quitar la clase a todos
+
+        $(this).addClass('activo'); //se le agrega la clase al que se da click
+
+        $('.ocultar').hide();
+
+        var enlace = $(this).attr('href');
+        // console.log(enlace);
+        $(enlace).fadeIn(1000);
+
+        return false;
+    });
+});
