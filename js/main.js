@@ -156,6 +156,10 @@
 // Usando jQuery
 
 $(document).ready(function() {
+
+    // Plugin Lettering
+    $('.nombre-sitio').lettering();
+
     // $('.ocultar').hide();
 
     // Programa de conferencias (talleres)

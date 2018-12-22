@@ -192,6 +192,61 @@ ul {
 .float-right {
     float: right;
 }
+
+/* Lettering  */
+h1.nombre-sitio span {
+    position: relative;
+    text-shadow: 0 0 30px #000000;
+}
+
+@media only screen and (min-width:992px) {
+    .char1 {
+        color: #e33000;
+        top: 20px ;
+        right: 20px;
+    }
+    .char2 {
+        top: 0px ;
+        left: -20px;
+    }
+    .char3 {
+        color: cyan;
+        top: 10px ;
+        right: 20px;
+    }
+    .char4 {
+        top: 5px ;
+        right: 10px;
+    }
+    .char5 {
+        color: orange;
+        top: 15px ;
+        right: 10px;
+    }
+    .char6 {
+        top: 5px ;
+        left: 10px;
+    }
+    .char7 {
+        color: pink;
+        top: 20px ;
+        left: -10px;
+    }
+    .char8 {
+        top: 0px ;
+        left: 10px;
+    }
+    .char9 {
+        color: rebeccapurple;
+        top: 10px ;
+        right: 20px;
+    }
+    .char10 {
+        top: 20px ;
+        right: 20px;
+    }
+}
+
 /* Header */
 .hero {
     background-image: url(../img/encabezado.jpg);
@@ -770,7 +825,18 @@ footer h3 span {
     text-align: center;
 }
 
-/* INTERDNAS */
+/* INTERNAS */
+
+/* Conferencia */
+.navegacion-principal .activo {
+    border-bottom: 2px solid #fe4918;
+}
+
+.galeria a {
+    display: inline-block;
+    margin-bottom: 5px; 
+}
+
 /* Registro */
 form.registro h3 {
     margin: 20px 0 0 0;
